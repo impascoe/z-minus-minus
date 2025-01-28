@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ZLSSettings">
+    <option name="inlayHints" value="false" />
+    <option name="zlsPath" value="/usr/bin/zls" />
+  </component>
+  <component name="ZigProjectSettings">
+    <option name="explicitPathToStd" value="/usr/lib/zig/std" />
+    <option name="toolchainPath" value="/usr/bin" />
+  </component>
+</project>
