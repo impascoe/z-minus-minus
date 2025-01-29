@@ -84,9 +84,8 @@ pub fn main() !void {
                     if (temp_index < line.len and line[temp_index] == @intFromEnum(Punctuation._left_parenthesis)) {
                         const identifier = try allocator.dupe(u8, buffer.items);
                         std.debug.print("Function identifier: {s}\n", .{identifier});
-                        try tokens.append(Token{ ._keyword = Keyword{._identifier = identifier} });
+                        try tokens.append(Token{ ._keyword = Keyword{ ._identifier = identifier } });
                         buffer.clearRetainingCapacity();
-
                     } else {
                         std.debug.print("Unknown identifier: {s}\n", .{buffer.items});
                         return;
